@@ -27,6 +27,8 @@ It will turn back on at sunrise on Easter Day.
 You can find the ID in the topic for your lightbulb from the zigbee2mqtt web interface;
 it's just the hex code in the device URL.
 
+The provided latitude and longitude are used to calculate the local sunrise time on Easter Day, so that the globe turns back on as the Vigil ends.
+
 4. Now for theeasy bit. Install the [deno](https://docs.deno.com/runtime/manual/getting_started/installation) runtime, and then run:
 
 ```sh
