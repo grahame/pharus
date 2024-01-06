@@ -1,0 +1,9 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "imports": {
+    "churchcalendar/": "https://deno.land/x/churchcalendar@1.4.4/",
+    "temporal": "npm:@js-temporal/polyfill"
+  }
+}

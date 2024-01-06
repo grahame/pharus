@@ -1,0 +1,51 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "npm:@js-temporal/polyfill": "npm:@js-temporal/polyfill@0.4.4",
+      "npm:@js-temporal/polyfill@0.4.4": "npm:@js-temporal/polyfill@0.4.4"
+    },
+    "npm": {
+      "@js-temporal/polyfill@0.4.4": {
+        "integrity": "sha512-2X6bvghJ/JAoZO52lbgyAPFj8uCflhTo2g7nkFzEQdXd/D8rEeD4HtmTEpmtGCva260fcd66YNXBOYdnmHqSOg==",
+        "dependencies": {
+          "jsbi": "jsbi@4.3.0",
+          "tslib": "tslib@2.6.2"
+        }
+      },
+      "jsbi@4.3.0": {
+        "integrity": "sha512-SnZNcinB4RIcnEyZqFPdGPVgrg2AcnykiBy0sHVJQKHYeaLUvi3Exj+iaPpLnFVkDPZIV4U0yvgC9/R4uEAZ9g==",
+        "dependencies": {}
+      },
+      "tslib@2.6.2": {
+        "integrity": "sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==",
+        "dependencies": {}
+      }
+    }
+  },
+  "remote": {
+    "https://deno.land/x/churchcalendar@1.4.4/calendar.ts": "7417b61f64aa42d83cbd349e4a0dd09872b7ff72d2096f00e64410cde0493283",
+    "https://deno.land/x/churchcalendar@1.4.4/festivalindex.ts": "2768e77e8ffc7123fa04582ed88a053bcb61635f4bbf0a4552035310d0f16dbe",
+    "https://deno.land/x/churchcalendar@1.4.4/nth.ts": "37968ad256fdf616301e5a592b7091f4236910cb0c01ed6e9226b8e195aa5201",
+    "https://deno.land/x/churchcalendar@1.4.4/packing.ts": "11be9534a198978b5a2a9d2ee2da9d940b69ee0462640a5e8c84ad7fd0034547",
+    "https://deno.land/x/churchcalendar@1.4.4/temporal.ts": "447b81ea34a4f19aae82b13ac264f1cea3da12613020f801fbf562503de70eaa",
+    "https://deno.land/x/churchcalendar@1.4.4/western/calendars/anglican-church-of-australia.ts": "898761efc42b574fa9657bdf064b7fa8e9d6687bd6a3efe7a58633e09b184a2f",
+    "https://deno.land/x/churchcalendar@1.4.4/western/festivals/advent.ts": "2908030b0683238617db55e3b1f9042171156f929abf152a4c211052730461d6",
+    "https://deno.land/x/churchcalendar@1.4.4/western/festivals/christmas.ts": "7d4a97e82eb219069754d4b2b2229da9a3138dc6ceb13543ed67070ea4c27a75",
+    "https://deno.land/x/churchcalendar@1.4.4/western/festivals/easter.ts": "d580d0ef69937ec53879d4396c859748e8a79bd7580753bb065f4d3a0f5cb4d8",
+    "https://deno.land/x/churchcalendar@1.4.4/western/festivals/epiphany.ts": "6a5424ae8e8ccd3dfe8809246604326b42bfb0667e1d831f7cd1b67b92109c12",
+    "https://deno.land/x/churchcalendar@1.4.4/western/festivals/feasts.ts": "2840045b213e012c021f54e4eec38f0c2f43ef21f3e0aeb07b8d52223749273d",
+    "https://deno.land/x/churchcalendar@1.4.4/western/festivals/holy_week.ts": "0bf1b605ff383f9c5dfdd1203a0da5b2b96929c8cd716e9b519839733af2a42e",
+    "https://deno.land/x/churchcalendar@1.4.4/western/festivals/index.ts": "b10b5ef4d9f2569febc06e0067e6f035f53a72d17fbd4a9f48042d5e572fce22",
+    "https://deno.land/x/churchcalendar@1.4.4/western/festivals/lent.ts": "90e8014ff0bd02e61613a5c3fe378fe2f154797e21033319e4dd76bfe538fd94",
+    "https://deno.land/x/churchcalendar@1.4.4/western/festivals/lesser_festivals.ts": "15ee81aa50f8e7c04c32aed1078971ab59a181441aaf39312b983f0a294eb18c",
+    "https://deno.land/x/churchcalendar@1.4.4/western/festivals/pentecost.ts": "3c2d1a02e823c0bdd0e5129aaeebe8fc499779c39e222671f8149d907d3ad2be",
+    "https://deno.land/x/churchcalendar@1.4.4/western/festivals/triduum.ts": "196436dc7baafb0adbde97d70fa31b36229e02a912fc11efb7750f248af0d15b",
+    "https://deno.land/x/churchcalendar@1.4.4/western/liturgicalyear.ts": "a6045095b2b29769fdc79ed367135c810b9895204543cd2626d0913160b2dabe",
+    "https://deno.land/x/churchcalendar@1.4.4/western/seasons/advent/advent.ts": "4844b83c6915296690b0e3ee579c9aeacd1b5cf756517e9228766240efd5f2b9",
+    "https://deno.land/x/churchcalendar@1.4.4/western/seasons/easter/easter.ts": "9da3f1237f05f123631aa8f47f685b0bbbb754f0c732e148017b59c2d106cf44",
+    "https://deno.land/x/churchcalendar@1.4.4/western/seasons/index.ts": "8a5bc88399a58a0b30372c5faa66ffd2de7b943b252e06e81070c656052521b5",
+    "https://deno.land/x/churchcalendar@1.4.4/western/seasons/pentecost/pentecost.ts": "ab7c1d8851e286b5445abb7e46152b7ab7390d1d4ea6c3b4496eb3d7911fa13c",
+    "https://deno.land/x/churchcalendar@1.4.4/western/sunday.ts": "ea0be3f63f35cdd5792da0b88b51db0a456cc639d0c7e0834cee24b8e34ba0f6"
+  }
+}
