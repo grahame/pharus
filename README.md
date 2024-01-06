@@ -42,3 +42,19 @@ deno run --unstable -A https://deno.land/x/pharus/cli/cron.ts config.json
 # changing the colour twice a second
 deno run --unstable -A https://deno.land/x/pharus/cli/runthrough.ts config.json
 ```
+
+## Future directions
+
+At the moment, the lightglobe follows the Calendar of the Anglican Church of Australia.
+It does this using my [church-calendar](https://github.com/grahame/church-calendar) library.
+I am very open to adding support for further calendars, including those from other denominations,
+or other provinces within the Anglican Communion.
+
+## Need a hand?
+
+This is a fun little project for me, but has been quite meaningful in terms of daily worship. When I get
+up in the morning, one of the first things I see is the colour of the day, coming through the study door.
+When it's red, or white, I find myself wondering which saint or martyr is marked this day.
+
+I'm happy to help anyone who is trying to get this running and hits obstacles. Just open an issue on this
+repository.
