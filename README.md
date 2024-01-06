@@ -11,7 +11,11 @@ It will turn back on at sunrise on Easter Day.
 
 ## Building a liturgical lightbulb
 
-1. You'll need a working [zigbee2mqtt](https://www.zigbee2mqtt.io/guide/getting-started/) setup. This isn't too hard, but it does involve ordering some hardware. The walkthrough is good. In terms of controllers, I've got an [Electrolama CC2652R1](https://shop.electrolama.com/collections/usb-rf-sticks/products/zzh-multiprotocol-rf-stick?variant=40387937468577) and it has worked well.
+Setting this project up will require some Linux skills. It could be a great hobby project though;
+in my own area, I've been considering running a workshop where attendees set up a light,
+and leave with it.
+
+1. You'll need a working [zigbee2mqtt](https://www.zigbee2mqtt.io/guide/getting-started/) setup. This isn't too hard, but it does involve ordering some hardware. The walkthrough is good. In terms of controllers, I've got an [Electrolama CC2652R1](https://shop.electrolama.com/collections/usb-rf-sticks/products/zzh-multiprotocol-rf-stick?variant=40387937468577) plugged into a [Raspberry Pi](https://www.raspberrypi.org/) and it has worked well.
 2. Get yourself a lightbulb, and register it with your Zigbee controller. I've got an [Tradfri LED bulb E14 470 lumen, dimmable colour](https://www.ikea.com/au/en/p/tradfri-led-bulb-e14-470-lumen-smart-wireless-dimmable-colour-and-white-spectrum-globe-50439197/) globe.
 3. Make yourself a configuration file:
 
