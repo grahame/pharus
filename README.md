@@ -66,7 +66,10 @@ Python code to talk to it, but it kept breaking when the controller updated itse
 
 While this started as a fun project, the liturgical light has added meaningfully to my pattern of daily worship. When I get
 up in the morning, one of the first things I see is the colour of the day, coming through the study door.
-When it's red, or white, I find myself wondering which saint or martyr is marked this day
+When it's red, or white, I find myself wondering which saint or martyr is marked this day.
+
+The initial release of this software was made on the Feast of the Epiphany, 2024. I'm not sure there
+could be a much more appropriate day for that to happen!
 
 ## Future directions
 
@@ -76,5 +79,8 @@ I am very open to adding support for further calendars, including those from oth
 or other provinces within the Anglican Communion.
 
 ## Need a hand?
+
 I'm happy to help anyone who is trying to get this running and hits obstacles. Just open an issue on this
 repository.
+
+If you do get this up and running, I'd love to hear from you. I'm an Anglican Priest working in Digital Mission, and I hope this has some missional outworkings.
