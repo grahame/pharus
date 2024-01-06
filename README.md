@@ -1,5 +1,11 @@
 # pharus: 'beacon' or 'lighthouse'
 
+
+
+https://github.com/grahame/pharus/assets/330805/0644480d-e9b8-4c07-a9b1-3218ce54215d
+
+
+
 This software allows you to configure a 'liturgical lightbulb', which changes colour
 in accordance with the Calendar of the Anglican Church of Australia.
 
