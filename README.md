@@ -29,7 +29,7 @@ it's just the hex code in the device URL.
 
 The provided latitude and longitude are used to calculate the local sunrise time on Easter Day, so that the globe turns back on as the Vigil ends.
 
-4. Now for theeasy bit. Install the [deno](https://docs.deno.com/runtime/manual/getting_started/installation) runtime, and then run:
+4. Now for the easy bit. Install the [deno](https://docs.deno.com/runtime/manual/getting_started/installation) runtime, and then run:
 
 ```sh
 # test things out by setting the globe to today's colour
