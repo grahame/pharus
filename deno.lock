@@ -3,7 +3,8 @@
   "packages": {
     "specifiers": {
       "npm:@js-temporal/polyfill": "npm:@js-temporal/polyfill@0.4.4",
-      "npm:@js-temporal/polyfill@0.4.4": "npm:@js-temporal/polyfill@0.4.4"
+      "npm:@js-temporal/polyfill@0.4.4": "npm:@js-temporal/polyfill@0.4.4",
+      "npm:sunrise-sunset-js": "npm:sunrise-sunset-js@2.2.1"
     },
     "npm": {
       "@js-temporal/polyfill@0.4.4": {
@@ -17,11 +18,18 @@
         "integrity": "sha512-SnZNcinB4RIcnEyZqFPdGPVgrg2AcnykiBy0sHVJQKHYeaLUvi3Exj+iaPpLnFVkDPZIV4U0yvgC9/R4uEAZ9g==",
         "dependencies": {}
       },
+      "sunrise-sunset-js@2.2.1": {
+        "integrity": "sha512-ErsvmxoTCZRacVPtlchkrTAR8qxypBy0BDrrv9LMugLuF0AykcS5pQsP1EhQJHgumxrTTSI8N8KJkQMVJ6dEPw==",
+        "dependencies": {}
+      },
       "tslib@2.6.2": {
         "integrity": "sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==",
         "dependencies": {}
       }
     }
+  },
+  "redirects": {
+    "https://deno.land/x/mqtt/deno/mod.ts": "https://deno.land/x/mqtt@0.1.2/deno/mod.ts"
   },
   "remote": {
     "https://deno.land/x/churchcalendar@1.4.4/calendar.ts": "7417b61f64aa42d83cbd349e4a0dd09872b7ff72d2096f00e64410cde0493283",
@@ -46,6 +54,27 @@
     "https://deno.land/x/churchcalendar@1.4.4/western/seasons/easter/easter.ts": "9da3f1237f05f123631aa8f47f685b0bbbb754f0c732e148017b59c2d106cf44",
     "https://deno.land/x/churchcalendar@1.4.4/western/seasons/index.ts": "8a5bc88399a58a0b30372c5faa66ffd2de7b943b252e06e81070c656052521b5",
     "https://deno.land/x/churchcalendar@1.4.4/western/seasons/pentecost/pentecost.ts": "ab7c1d8851e286b5445abb7e46152b7ab7390d1d4ea6c3b4496eb3d7911fa13c",
-    "https://deno.land/x/churchcalendar@1.4.4/western/sunday.ts": "ea0be3f63f35cdd5792da0b88b51db0a456cc639d0c7e0834cee24b8e34ba0f6"
+    "https://deno.land/x/churchcalendar@1.4.4/western/sunday.ts": "ea0be3f63f35cdd5792da0b88b51db0a456cc639d0c7e0834cee24b8e34ba0f6",
+    "https://deno.land/x/mqtt@0.1.2/client/base_client.ts": "c6fbd5e327a9d06628e4c5bfeb1881c5d97cdc9fb01ebc9bef726ddc0ad10ced",
+    "https://deno.land/x/mqtt@0.1.2/deno/deno_client.ts": "39b6ef2008107604965654374ebd58c679dcd6d941e0efb4e0a74b20eb283f46",
+    "https://deno.land/x/mqtt@0.1.2/deno/mod.ts": "dcb37ab97d47432d984a41729d4f440cdb2f3ae20cce7525474fc24433f12ce3",
+    "https://deno.land/x/mqtt@0.1.2/lib/mod.ts": "863c871f3d0b6e925067dc80e8fffc7e09addc7095e0f4489409687ee9081032",
+    "https://deno.land/x/mqtt@0.1.2/packets/connack.ts": "d3e9ada09d812a3c0be1d4d321008ba36feb1ea56933fbdd406e0ea1671e16d1",
+    "https://deno.land/x/mqtt@0.1.2/packets/connect.ts": "2088ec4eab48ffd95061dcf3aaf3c298451b96bb43e6aa6f061f10da960909ea",
+    "https://deno.land/x/mqtt@0.1.2/packets/disconnect.ts": "8d1088e88459e3463b9b4fa63060e6b21dc2cc97677d1622b95c6aad3427f826",
+    "https://deno.land/x/mqtt@0.1.2/packets/length.ts": "975d38ae7beb920cbfd682901e9d4eeeb54fa61854d0addd593bf646065d7ce6",
+    "https://deno.land/x/mqtt@0.1.2/packets/mod.ts": "f25b831c818914b1770c7826d8057a328dd0f11e354e5cee5c3f2c0fedb1cbf7",
+    "https://deno.land/x/mqtt@0.1.2/packets/pingreq.ts": "db5aad46559be466702274ad6bc458c09c2a104d46e5fd25c312a04eb237528f",
+    "https://deno.land/x/mqtt@0.1.2/packets/pingres.ts": "e5ab665c6c2e430458b1a938bf12aae3989f8606328254546a0d9df011b541fa",
+    "https://deno.land/x/mqtt@0.1.2/packets/puback.ts": "dea32076f3c4b47b97f62f36adff95544599a6f1d6f9b41439dba1bcb784b3ce",
+    "https://deno.land/x/mqtt@0.1.2/packets/pubcomp.ts": "1c06dee45ca925b6e36eaf9b39dc5479d09ed50320946a7c56281f997666ac36",
+    "https://deno.land/x/mqtt@0.1.2/packets/publish.ts": "edd807d1540a602df631ceffe6ae2966c0859785ca2234a9c73c339814f0d0db",
+    "https://deno.land/x/mqtt@0.1.2/packets/pubrec.ts": "f58a32f907ecb90b5170099bd3d649ac518ebf4fb0a75697ec81fb300faff7cb",
+    "https://deno.land/x/mqtt@0.1.2/packets/pubrel.ts": "0eb34365c4f055649a426d1856483f3cb6200b3e6098dc1cf5ec0e8562ed526a",
+    "https://deno.land/x/mqtt@0.1.2/packets/suback.ts": "cc5f87fa94c63500812bc800bb1d1149c58b591b1c15fd969376083d6b41d660",
+    "https://deno.land/x/mqtt@0.1.2/packets/subscribe.ts": "bd54a77ec57ffa6bea4c6f72a0aac4d1ef6676a4b00d59b3c9a435b416f3d1c3",
+    "https://deno.land/x/mqtt@0.1.2/packets/unsuback.ts": "0e204da0419e09c0ef0ffa2c3999214982d7587d086de05761b8fe0522443b33",
+    "https://deno.land/x/mqtt@0.1.2/packets/unsubscribe.ts": "750128c6526633964faa109b549fa02c1ed5bba0306f151710c86b9935b36d1d",
+    "https://deno.land/x/mqtt@0.1.2/packets/utf8.ts": "72213bc8d85ae315e876a53350a87c66f98069c3529260667c365d8b7542a34a"
   }
 }

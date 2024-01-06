@@ -30,19 +30,7 @@ const arrayRotate = (arr: ResolvedObservance[], count: number) => {
     return arr;
 };
 
-const get_today = (): Temporal.PlainDate => {
-    // node has a bug that breaks getting a new Temporal date without an
-    // explicitly named timezone
-    const today = new Date();
-    return new Temporal.PlainDate(
-        today.getFullYear(),
-        today.getMonth() + 1,
-        today.getDate()
-    );
-};
-
 export const getTodayColour = (
-    year: number,
     season: LiturgicalSeason | null,
     observances: ResolvedObservance[]
 ): [string, LiturgicalColour] => {
@@ -54,14 +42,13 @@ export const getTodayColour = (
         return [seasonDescription, seasonColour];
     }
 
-    const observanceColour = observances[0].colour;
-    if (observanceColour) {
-        return [observances[0].slug, observanceColour];
-    }
-    return [seasonDescription, seasonColour];
+    // observances without an explicit colour are simply those
+    // who do not differ from their season
+    const observanceColour = observances[0].colour || seasonColour;
+    return [observances[0].slug, observanceColour];
 };
 
-const update = (date: Temporal.PlainDate) => {
+export const getCalendarColour = (date: Temporal.PlainDate) => {
     const year = getLiturgicalYear(date);
 
     const [_ctxt, placed_events] = aca_calendar(year);
@@ -74,11 +61,5 @@ const update = (date: Temporal.PlainDate) => {
     arrayRotate(observances, (year - 2024) % observances.length);
 
     const season = get_season_for_date(seasons, date);
-    const colour = getTodayColour(year, season, observances);
-    console.log(colour);
+    return getTodayColour(season, observances);
 };
-
-if (import.meta.main) {
-    const today = get_today();
-    update(today);
-}

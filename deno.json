@@ -4,6 +4,8 @@
   },
   "imports": {
     "churchcalendar/": "https://deno.land/x/churchcalendar@1.4.4/",
-    "temporal": "npm:@js-temporal/polyfill"
+    "temporal": "npm:@js-temporal/polyfill",
+    "mqtt": "https://deno.land/x/mqtt/deno/mod.ts",
+    "sunrise-sunset": "npm:sunrise-sunset-js"
   }
 }
