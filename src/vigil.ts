@@ -1,4 +1,4 @@
-import { Temporal } from "temporal";
+import { Temporal } from "./libs.ts";
 import { calculateSunrise } from "./sunrise.ts";
 
 // a solemn liturgical touch: we turn the lamp off from 3pm on Good Friday,

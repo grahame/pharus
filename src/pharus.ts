@@ -1,5 +1,5 @@
-import { Temporal } from "temporal";
 import { getCalendarColour } from "./calendar.ts";
+import { Temporal } from "./libs.ts";
 import { setLight } from "./light.ts";
 import { ChristHasDied } from "./vigil.ts";
 

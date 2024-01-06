@@ -1,7 +1,7 @@
 import { State } from "../src/state.ts";
 import { Config, pharusApply } from "../src/pharus.ts";
 import { get_now } from "../src/today.ts";
-import { Temporal } from "temporal";
+import { Temporal } from "../src/libs.ts";
 
 const state: State = {
     context: { valid: false },

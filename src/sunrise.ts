@@ -1,5 +1,4 @@
-import { Temporal } from "temporal";
-import { getSunrise } from "sunrise-sunset";
+import { Temporal, getSunrise } from "./libs.ts";
 
 export const calculateSunrise = (
     today: Temporal.PlainDate,

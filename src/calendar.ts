@@ -1,16 +1,14 @@
 import {
-    aca_seasons,
-    calendar as aca_calendar,
-} from "churchcalendar/western/calendars/anglican-church-of-australia.ts";
-import { getLiturgicalYear } from "churchcalendar/western/liturgicalyear.ts";
-import {
     LiturgicalColour,
     LiturgicalSeason,
     ResolvedCalendar,
     ResolvedObservance,
-} from "churchcalendar/calendar.ts";
-import { Temporal } from "temporal";
-import { get_season_for_date } from "churchcalendar/western/seasons/index.ts";
+    Temporal,
+    aca_calendar,
+    aca_seasons,
+    getLiturgicalYear,
+    get_season_for_date,
+} from "../src/libs.ts";
 
 const getObservancesForDate = (
     placed_events: ResolvedCalendar,

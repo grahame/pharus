@@ -1,6 +1,5 @@
-import { Client } from "mqtt";
 import { getHexColour } from "./colours.ts";
-import { LiturgicalColour } from "churchcalendar/calendar.ts";
+import { LiturgicalColour, MQTTClient } from "./libs.ts";
 
 const hex2rgb = (hex: string) => {
     const r = parseInt(hex.substring(0, 2), 16);
@@ -15,7 +14,7 @@ export const setLight = async (
     brightness: number,
     colour: LiturgicalColour
 ) => {
-    const client = new Client({ url });
+    const client = new MQTTClient({ url });
     await client.connect();
     const payload = JSON.stringify({
         state: brightness === 0 ? "OFF" : "ON",

@@ -1,4 +1,4 @@
-import { LiturgicalColour } from "churchcalendar/calendar.ts";
+import { LiturgicalColour } from "./libs.ts";
 
 export const getHexColour = (colour: LiturgicalColour): string => {
     switch (colour) {
