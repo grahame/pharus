@@ -4,7 +4,7 @@ https://github.com/grahame/pharus/assets/330805/0644480d-e9b8-4c07-a9b1-3218ce54
 
 _`pharus` showing the colours of the calendar, Lent through Easter 2024_
 
-This software allows you to configure a 'liturgical lightbulb', which changes colour
+This software allows you to build a 'liturgical lightbulb', which changes colour
 in accordance with the Calendar of the Anglican Church of Australia.
 
 The various festivals in the Calendar are observed, including lesser feasts. Where more than one lesser feast might be celebrated on a day, the feasts are rotated each year, so that every few years every feast
