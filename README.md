@@ -51,6 +51,23 @@ deno run --unstable -A https://deno.land/x/pharus/cli/cron.ts config.json
 deno run --unstable -A https://deno.land/x/pharus/cli/runthrough.ts config.json
 ```
 
+## Background
+
+This project came out of my days as a theological student, training for ordination as an Anglican priest.
+One of the requirements for ordination in my Diocese is completion of [Clinical Pastoral Education](https://www.acpewa.org/).
+For three months I was an intern chaplain at Royal Perth Hospital. It was a very intense experience: overall,
+wonderful, but complex in the detail. I found myself spending some time in [St Mary's Cathedral](https://stmaryscathedralperth.com.au/) 
+when I needed to, and noticed that they change the lighting around the sanctuary day by day according to the Calendar.
+
+I decided to take that idea and bring it into my home. Changing the colour of a light each day was going to be 
+too much work for me to keep it up, so I decided to automate it. I built the light as a little fun distraction while 
+completing CPE; this version of the light is much more polished. (The original used an IKEA Tradfri controller and some
+Python code to talk to it, but it kept breaking when the controller updated itself; this is version 2, and is pretty solid!)
+
+While this started as a fun project, the liturgical light has added meaningfully to my pattern of daily worship. When I get
+up in the morning, one of the first things I see is the colour of the day, coming through the study door.
+When it's red, or white, I find myself wondering which saint or martyr is marked this day
+
 ## Future directions
 
 At the moment, the lightglobe follows the Calendar of the Anglican Church of Australia.
@@ -59,10 +76,5 @@ I am very open to adding support for further calendars, including those from oth
 or other provinces within the Anglican Communion.
 
 ## Need a hand?
-
-This is a fun little project for me, but has been quite meaningful in terms of daily worship. When I get
-up in the morning, one of the first things I see is the colour of the day, coming through the study door.
-When it's red, or white, I find myself wondering which saint or martyr is marked this day.
-
 I'm happy to help anyone who is trying to get this running and hits obstacles. Just open an issue on this
 repository.
