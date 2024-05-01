@@ -49,13 +49,13 @@ export const getTodayColour = (
 export const getCalendarColour = (date: Temporal.PlainDate) => {
     const year = getLiturgicalYear(date);
 
-    const [_ctxt, placed_events] = aca_calendar(year);
+    const calendar = aca_calendar(year);
     const seasons = aca_seasons(year);
 
     // we take the colour from the observances on a modulo N(observances) pattern relative to the year
     // this project launched (2024), and in so doing we'll mark the colour of every observance over an
     // N-year cycle.
-    const observances = getObservancesForDate(placed_events, date);
+    const observances = getObservancesForDate(calendar.observances, date);
     arrayRotate(observances, (year - 2024) % observances.length);
 
     const season = get_season_for_date(seasons, date);
