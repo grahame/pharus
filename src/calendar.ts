@@ -1,7 +1,7 @@
 import {
+    DateObservances,
     LiturgicalColour,
     LiturgicalSeason,
-    ResolvedCalendar,
     ResolvedObservance,
     Temporal,
     aca_calendar,
@@ -11,7 +11,7 @@ import {
 } from "../src/libs.ts";
 
 const getObservancesForDate = (
-    placed_events: ResolvedCalendar,
+    placed_events: DateObservances,
     date: Temporal.PlainDate
 ): ResolvedObservance[] => {
     for (const [dt, obvs] of placed_events) {
