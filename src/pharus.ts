@@ -5,7 +5,7 @@ import { ChristHasDied } from "./vigil.ts";
 
 export interface Config {
     readonly url: string;
-    readonly topic: string;
+    readonly lights: string[];
     readonly latitude: number;
     readonly longitude: number;
 }
@@ -46,7 +46,14 @@ export const pharusApply = async (
         context.brightness !== brightness ||
         context.colour !== colour
     ) {
-        await setLight(config.url, config.topic, brightness, colour);
+        for (const light of config.lights) {
+            await setLight(
+                config.url,
+                `zigbee2mqtt/${light}/set`,
+                brightness,
+                colour
+            );
+        }
         wasChanged = true;
     }
     return { valid: true, brightness, colour, slug, wasChanged };
