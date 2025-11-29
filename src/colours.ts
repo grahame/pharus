@@ -11,7 +11,7 @@ export const getHexColour = (colour: LiturgicalColour): string => {
         case LiturgicalColour.COLOUR_VIOLET:
             return "4B0082";
         case LiturgicalColour.COLOUR_VIOLET_OR_BLUE:
-            return "0000F9";
+            return "4B0082";
         case LiturgicalColour.COLOUR_BLACK:
             return "ffffff";
         case LiturgicalColour.COLOUR_ROSE:
